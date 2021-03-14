@@ -1,10 +1,10 @@
 body{
-    background-image:url("photo-1592503254549-d83d24a4dfab.jpg");
+    background-image:url("shifaaz-shamoon-oR0uERTVyD0-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
  
-    
+    min-height: 100vh;
     margin:0 auto;
     padding: 0;
 }
@@ -19,7 +19,7 @@ h2{
    left:50%;
    width:500px;
    padding: 2rem;
-    background-color:rgba(0,0,0,.8);
+    background-color:rgb(66,144,245);
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
@@ -39,23 +39,27 @@ h2{
 .button{
     width:20%;
     padding: 0.6rem;
-    background-color:rgb(59, 59, 218);
-    border-radius: 8px;
+    background-color:rgb(19, 145, 38);
+    border-radius: 12px;
     color:white;
     border:none;
+
   
     
 }
 .heading-style{
-    color: red;
-    margin-top: 50px ;
+    color: rgb(218, 25, 11);
    text-align:center;
    font-size: 50px;
+   text-align: center;
+    font-family: cursive;
+    margin-top: 10px;
 }
-.button2{
-    width:20%;
+
+.button-form{
+    width:10%;
     padding: 0.6rem;
-    background-color:rgb(228, 34, 34);
+    background-color:rgb(218, 25, 11);
     border-radius: 8px;
     color:white;
     border:none;
@@ -65,8 +69,16 @@ h2{
    text-align: center;
    display:none;
 }
-h1{
-    color:cyan;
+.heading{
+    color: white ;
+    text-align: center;
+    background-color:rgb(59, 59, 218);
+    width:60%;
+    height: 80px;
+    margin-left: 250px;
+    padding: 10px;
+    margin-top:5px;
+    
 }
 .np{
     color: white;
@@ -75,9 +87,41 @@ h1{
 .button3{
     width:20%;
     padding: 0.6rem;
-    background-color:rgb(70, 192, 70);
+    background-color:rgb(218, 25, 11);
     border-radius: 8px;
     color:white;
     border:none;
+
+ 
+
   
 }
+#input-form{
+    display:none;
+}
+
+
+.form-heading{
+   
+    margin-top: 0px;
+    color: white;
+}
+
+.container2{
+    margin:0 auto;
+   top: 50%;
+   left:50%;
+   width:500px;
+   padding: 2rem;
+    background-color:rgb( 13, 191, 61);
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: o 16px 26px rgba(0,0,0,.5);
+    border-radius: 12px;
+    margin-bottom: 100px;
+   
+}
+
+
+    

@@ -6,12 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/fontawesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
     
 </head>
 <body>
+
+   
+
+
+
+
+
     <div id="login-area">
-                <h1 class="heading-style">Welcome to E-commarce Site</h1>
+             <h1 class="heading-style">Welcome To E-commarce Site</h1>
             
                 <div class="container">
                     
@@ -20,50 +27,77 @@
             <input  type="email" placeholder="Email" class="style1" ><br/><br/>
             <input type="password" placeholder="password" class="style1"><br/><br/>
 
-            <button class="button" id="login" ><i class="fas fa-sign-in-alt"></i> Enter</a></button>
+          <a href="‪H:\university project\app.html">
+              <button class="button" id="login" ><i class="fas fa-sign-in-alt"></i> Enter</button> </a>
             </form>
 
         </div>
 </div>
-<div class="align container" id="input-feild">
- <button class="button2">Add Product</button>
- <button class="button2"> View Product</button>
-<form>
-   
-    <h1> Enter Your Product Information and save here</h1>
-    <input type="name" placeholder="Name" class="style1"><br/><br/>
-    <input  type="email" placeholder="Email" class="style1" ><br/><br/>
-    <input  type="number" placeholder="Phone Number" class="style1" ><br/><br/>
-    <input  type="password" placeholder="Password" class="style1" ><br/><br/>
-    <input  type="number" placeholder="Product ID" class="style1" ><br/><br/>
-    <input  type="name" placeholder="Product Name" class="style1" ><br/><br/>
-    <input  type="text" placeholder="Product Type" class="style1" ><br/><br/>
-    <input  type="text" placeholder="City" class="style1" ><br/><br/>
-    <input  type="number" placeholder="Zip " class="style1" ><br/><br/>
-    <p class="np"><input type="checkbox">save your Information</p>
-    <button class="button3">Save</button>
 
-
-
-
+<div class="align" id="input-field">
 
     
 
-</form>
+
+ <button class="button-form" id="form-input">Add Product</button>
+ <button class="button-form"> View Product</button>
 </div>
+
+
+<form id="input-form">
+   <div class="container2">
+    <h1 class="form-heading"> Enter Your Product Information and save here</h1>
+    <input type="name" placeholder="First Name" class="style1 "><br/><br/>
+    <input  type="name" placeholder="Last Name" class="style1" ><br/><br/>
+    <input  type="number" placeholder="Phone Number" class="style1" ><br/><br/>
+    <input  type="name" placeholder="Product Name" class="style1" ><br/><br/>
+    <input  type="number" placeholder="Product ID" class="style1" ><br/><br/>
+    <input  type="text" placeholder="Product Type" class="style1" ><br/><br/>
+    <input  type="number" placeholder="Password " class="style1" ><br/><br/>
+    <input  type="text" placeholder="Address" class="style1" ><br/><br/>
+    <p class="np"><input type="checkbox">save your Information</p>
+    <button class="button3">Save</button>
+</div>
+    
+</form>
+
+
 
         <script>
                         const loginBtn= document.getElementById("login");
-                        loginBtn.addEventListener("click",function(){
-                            console.log("Clicked me");
+                        loginBtn.addEventListener("click",function(event){
+                            console  .log("Clicked me");
                             const loginArea = document.getElementById("login-area");
                             loginArea.style.display = "none";
-                            const inputFeild = document.getElementById("input-feild");
+
+                            const inputFeild = document.getElementById("input-field");
                             inputFeild.style.display ="block";
+                            event.preventDefault();
+                       
                             
+                          
                         
-            })
+            },false)
+
+
+            const formBtn= document.getElementById("form-input");
+                        formBtn.addEventListener("click",function(event){
+                            console.log("Clicked me");
+                            const inputField = document.getElementById("input-field")
+                            inputField.style.display ="none";
+
+                            const formInput = document.getElementById("input-form");
+                            formInput.style.display="block";
+                      
+
+            event.preventDefault();
+                        },false)
         </script>
     
+
+
+
+
+
 </body>
 </html>
